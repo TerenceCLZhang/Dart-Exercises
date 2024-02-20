@@ -1,0 +1,20 @@
+import 'dart:io';
+
+/// Create a program that asks the user for a number and then prints out a list
+/// of all the divisors of that number.
+///
+/// If you don’t know what a divisor is, it is a number that divides evenly
+/// into another number. For example, 13 is a divisor of 26 because 26 / 13
+/// has no remainder.
+
+void main() {
+  print("Enter a number:");
+  int number = int.parse(stdin.readLineSync() ?? "0");
+  for (int potentialDivisor = 1;
+      potentialDivisor <= number;
+      potentialDivisor++) {
+    if (number % potentialDivisor == 0) {
+      print(potentialDivisor);
+    }
+  }
+}
