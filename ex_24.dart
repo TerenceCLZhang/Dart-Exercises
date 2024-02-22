@@ -69,7 +69,7 @@ void printWord(String word, Map<String, bool> guessed) {
 
 void main() {
   String stringGuessedLetters, guess;
-  String word = "EVAPORATE";
+  final String word = "EVAPORATE";
   Map<String, bool> guessed = {};
   List<String> guessedLetters = [];
 

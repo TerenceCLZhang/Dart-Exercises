@@ -23,7 +23,7 @@ String pickRandomWord(List<String> wordList) {
 }
 
 void main() {
-  String fileName = "ex_23_SOWPODS.txt";
+  String fileName = "SOWPODS.txt";
   List<String> wordList = readFromFile(fileName);
   String randomWord = pickRandomWord(wordList);
   print(randomWord);
